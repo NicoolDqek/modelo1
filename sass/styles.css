@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .navbar {
   display: flex;
@@ -7,6 +6,7 @@
   height: auto;
   background-image: url(https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-size: cover;
+  box-shadow: 0px 2px 20px 22px rgba(12, 12, 12, 0.944);
 }
 .navbar .navbarb {
   display: flex;
@@ -24,7 +24,7 @@
 }
 .navbar .navbarb li {
   padding: 0 1.5rem;
-  margin-left: 2rem;
+  margin-left: 10px;
   font-family: "Bebas Neue", serif;
 }
 .navbar .logo {
@@ -33,9 +33,16 @@
   letter-spacing: 2px;
   color: white;
   width: 30%;
+  display: flex;
+  align-items: center;
 }
 .navbar .logo li {
-  margin-left: 2rem;
+  padding: 0;
+  margin: 6px;
+  font-family: "Bebas Neue", serif;
+}
+.navbar .logo i {
+  padding-left: 2rem;
 }
 .navbar .navbarn {
   display: flex;
@@ -88,7 +95,7 @@
   letter-spacing: 2px;
   color: white;
   text-transform: uppercase;
-  background-color: #372A2F;
+  background-color: rgba(55, 42, 47, 0.7450980392);
   border: none;
   margin-top: 2rem;
   margin-left: 10%;
@@ -170,10 +177,10 @@
   justify-content: center;
   align-items: center;
   padding: 4rem 2rem;
-  background-color: #372A2F;
 }
 .contenedorC main .benefict {
-  background-color: rgba(253, 248, 248, 0.495);
+  background-color: rgba(253, 248, 248, 0.484);
+  border-bottom: 3px solid white;
   border-radius: 50px;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -185,6 +192,7 @@
   justify-content: center;
   text-align: center;
   padding-top: 2rem;
+  box-shadow: 0px 2px 15px 1px rgba(255, 255, 255, 0.944);
 }
 .contenedorC main .benefict i {
   padding-bottom: 6px;
@@ -224,15 +232,14 @@
 .contenedorC .contenedorCa .card {
   display: flex;
   justify-content: center;
-  height: -moz-min-content;
-  height: min-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  height: 250px;
+  width: 250px;
   margin: 4rem 1.5rem;
   border-radius: 50px;
   position: relative;
   overflow: hidden;
   box-shadow: 1px 2px 20px 1px rgb(0, 0, 0);
+  cursor: url(../scss/assets/cursor.png), auto;
 }
 .contenedorC .contenedorCa .card:hover {
   transform: scale(1.1);
@@ -240,7 +247,7 @@
   bottom: 0;
 }
 .contenedorC .contenedorCa .card:hover .info {
-  top: 0; /* Mueve la información hacia la vista */
+  top: 0;
 }
 .contenedorC .contenedorCa .card img {
   height: 300px;
@@ -276,6 +283,114 @@
   letter-spacing: 2px;
   color: white;
   padding-left: 8px;
+}
+
+.t2 {
+  font-family: "Bebas Neue", serif;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #161c27;
+  padding-top: 3rem;
+}
+
+.contenedorV {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 5rem;
+  font-family: "Bebas Neue", serif;
+}
+.contenedorV .rigth {
+  padding: 1.5rem;
+  width: 50%;
+  height: auto;
+}
+.contenedorV .rigth img {
+  height: auto;
+  width: 100%;
+  border-radius: 50px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenedorV h3 {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #161c27;
+  padding-left: 5px;
+}
+.contenedorV h5 {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #583837;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+.contenedorV h6 {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(66, 65, 65);
+  line-height: 1.5;
+  padding-left: 5px;
+}
+.contenedorV p {
+  font-size: 13px;
+  font-weight: line-height;
+  letter-spacing: 1px;
+  color: rgba(55, 42, 47, 0.7450980392);
+  line-height: 1.5;
+  padding-left: 5px;
+}
+.contenedorV .left {
+  width: 50%;
+  height: auto;
+}
+.contenedorV .left .articulo {
+  padding: 10px;
+}
+.contenedorV .left .articulo section {
+  display: flex;
+  align-items: center;
+}
+.contenedorV .left .articulo section img {
+  height: auto;
+  width: 180px;
+  border-radius: 20px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenedorV .left .articulo section div {
+  padding: 4px;
+  line-height: 1.5;
+}
+.contenedorV .left .articulo section div h3 {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #161c27;
+}
+.contenedorV .left .articulo section div h5 {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #583837;
+}
+.contenedorV .left .articulo section div h6 {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(66, 65, 65);
+}
+.contenedorV .left .articulo section div p {
+  font-size: 12px;
+  font-weight: line-height;
+  letter-spacing: 1px;
+  color: rgba(55, 42, 47, 0.7450980392);
 }
 
 * {

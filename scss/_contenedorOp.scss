@@ -1,0 +1,114 @@
+@import "../scss/mixins";
+@import "../scss/variables";
+
+.contenedorOp{
+   display: flex; 
+   justify-content: center;
+   padding-top: 4rem;
+   
+
+   .left{
+    width: 40%;
+    padding:2rem 0 6rem  0;
+   
+
+      span{
+         display: flex;
+         align-items: center;
+         margin-bottom: 10px;
+         
+         img{
+            @include imagen(40px,40px,50px,relative);
+            padding-right: 10px;
+         }
+      }
+
+      i{
+         color: rgb(230, 147, 14);
+         font-size: 10px;
+         line-height: 1;
+      }
+
+      h4{
+      @include fuente(15px,bold,black,2px);
+      line-height: 2;
+      }
+      p{
+         @include fuente(13px,lighter,black,2px);
+         line-height: 1.5;
+      
+      }
+   }
+
+   .right{
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   
+
+   
+     .l{
+     display: flex;
+     width: min-content;
+     align-items: center;
+     justify-content: center;
+     padding-right: 1rem;
+   
+     
+     img{
+     width: 250px;
+     height: 300px;
+     border-radius: 50px;
+
+     }
+     }
+     
+     .r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    position: relative;
+    
+   
+      video{
+         width:100%;
+         border-radius: 40px;
+         height: max-content; 
+         padding:  8px 0;
+
+         
+      }
+      h4{
+         @include fuente(13px,bold,black,3px);
+        padding-left: 5px;
+        text-align: center;
+      }
+
+      button{
+         position: absolute;
+         width: 40%;
+         right: 0;
+         bottom: 0;
+         padding: 10px;
+         border-radius: 50px;
+         border:2px solid $rose_ebony;
+         letter-spacing: 2px;
+         transition: .4s ease-in-out;
+
+      &:hover{
+      
+      background-color: $rose_ebony;
+      color: wheat;
+
+      }
+      }
+
+
+     }
+   }
+}
+

@@ -1,0 +1,284 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-image: url(https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+}
+.navbar .navbarb {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.285);
+  height: 5rem;
+  width: 100%;
+  list-style: none;
+  position: fixed;
+  z-index: 1;
+}
+.navbar .navbarb li {
+  padding: 0 1.5rem;
+  margin-left: 2rem;
+  font-family: "Bebas Neue", serif;
+}
+.navbar .logo {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  width: 30%;
+}
+.navbar .logo li {
+  margin-left: 2rem;
+}
+.navbar .navbarn {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.header .right {
+  width: 50%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.header .right h1 {
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  max-width: 90%;
+  padding-left: 10%;
+  line-height: 1.5;
+  margin-top: 5rem;
+  font-family: "Bebas Neue", serif;
+}
+.header .right p {
+  max-width: 90%;
+  color: aliceblue;
+  padding-left: 10%;
+  line-height: 2;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  margin-top: 1rem;
+}
+.header .right button {
+  border-radius: 50px;
+  position: relative;
+  padding: 1rem;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #372A2F;
+  border: none;
+  margin-top: 2rem;
+  margin-left: 10%;
+  position: relative;
+  overflow: hidden;
+}
+.header .right button::before {
+  content: "MAS INDORMACION ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5176470588);
+  top: 0;
+  right: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: 0.7s ease-in-out;
+}
+.header .right button:hover::before {
+  right: 0;
+  border: 2px solid white;
+}
+.header .left {
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .left img {
+  margin: 4px;
+}
+.header .left img[class$="1"] {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 8px 19px 44px 14px rgb(0, 0, 0);
+  bottom: 20%;
+  left: 10%;
+}
+.header .left img[class$="2"] {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 8px 19px 44px 14px rgb(0, 0, 0);
+  right: 20%;
+  bottom: 45%;
+}
+.header .left img[class$="3"] {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 8px 19px 44px 14px rgb(0, 0, 0);
+  right: 20%;
+  bottom: 8%;
+}
+
+.contenedorC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.contenedorC main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #372A2F;
+}
+.contenedorC main .benefict {
+  background-color: rgba(253, 248, 248, 0.495);
+  border-radius: 50px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  width: 250px;
+  height: 250px;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2rem;
+}
+.contenedorC main .benefict i {
+  padding-bottom: 6px;
+  color: #31D8D8;
+  font-size: 25px;
+}
+.contenedorC main .benefict h5 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #161c27;
+  padding: 5px 10px;
+}
+.contenedorC main .benefict h6 {
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: #161c27;
+  padding: 20px;
+  line-height: 1.5;
+}
+.contenedorC h2 {
+  font-size: 50px;
+  font-weight: lighter;
+  letter-spacing: #161c27;
+  color: 3px;
+  padding-top: 2rem;
+  padding-left: 4rem;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", serif;
+}
+.contenedorC .contenedorCa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorC .contenedorCa .card {
+  display: flex;
+  justify-content: center;
+  height: -moz-min-content;
+  height: min-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 4rem 1.5rem;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 2px 20px 1px rgb(0, 0, 0);
+}
+.contenedorC .contenedorCa .card:hover {
+  transform: scale(1.1);
+  top: 0;
+  bottom: 0;
+}
+.contenedorC .contenedorCa .card:hover .info {
+  top: 0; /* Mueve la información hacia la vista */
+}
+.contenedorC .contenedorCa .card img {
+  height: 300px;
+  width: 250px;
+  border-radius: 50px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contenedorC .contenedorCa .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(88, 56, 55, 0.3294117647);
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  transition: 1s ease-in-out;
+}
+.contenedorC .contenedorCa .info h5 {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #31D8D8;
+  padding-left: 8px;
+}
+.contenedorC .contenedorCa .info h6 {
+  font-size: 30px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: white;
+  padding-left: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}/*# sourceMappingURL=styles.css.map */

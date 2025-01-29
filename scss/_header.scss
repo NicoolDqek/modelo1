@@ -1,0 +1,161 @@
+@import "../scss/mixins";
+
+.navbar{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     height: auto;
+     background-image:url(https://images.pexels.com/photos/592753/pexels-photo-592753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+     background-size: cover;
+
+     .navbarb{
+        display: flex;
+        align-items: center;
+        @include fuente(20px,bold,white,2px);
+        background-color:  rgba(0, 0, 0, 0.285);
+        height: 5rem;
+        width: 100%;
+        list-style: none;
+        position:fixed;
+        z-index: 1;
+        
+        
+        li{
+            padding: 0 1.5rem;
+            margin-left: 2rem;
+            font-family: $bebas-neue-regular;
+        }
+     } 
+
+    .logo{
+      @include fuente(25px,bold, white,2px);
+      width: 30%;
+
+      li{
+        margin-left: 2rem;
+      }
+    
+    }
+    .navbarn{
+        display:flex;
+        justify-content: center;
+        width: 70%;
+        
+    
+     }
+        
+}
+
+.header{
+
+display: flex;
+width: 100%;
+height:100vh;
+ 
+.right{
+
+
+width: 50%;
+display: flex;
+height: auto;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+    h1{
+      @include fuente(45px,bold,white,2px);
+      text-transform: uppercase;  
+      max-width: 90%;
+      padding-left: 10%;
+      line-height: 1.5;
+      margin-top: 5rem;
+      font-family: $bebas-neue-regular;
+    }
+
+    p{
+      max-width: 90%;
+      color:aliceblue;
+      padding-left: 10%;
+      line-height: 2;
+      @include fuente(17px,bold,white,2px);
+      margin-top: 1rem;
+  }
+  button{
+    @include botones(50px,relative,1rem);
+    @include fuente(15px,900,white,2px);
+    text-transform: uppercase;
+    background-color: $raisin_black;
+    border: none;
+    margin-top: 2rem;
+     margin-left: 10%;
+     position: relative;
+     overflow: hidden;
+
+    &::before{
+      content:"MAS INDORMACION ";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color:#00000084;
+      top: 0;
+      right: 100%;
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      border-radius: 50px;
+      transition: .7s ease-in-out;
+      
+    }
+
+    &:hover::before {
+      right: 0; 
+      border: 2px solid white;
+    }
+
+
+  }
+}
+
+
+
+  .left{
+width: 50%;
+height: auto;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+
+    img{
+
+     margin: 4px;
+      
+
+
+      &[class$="1"] {
+        @include imagen(300px,200px,10px,absolute);
+        box-shadow: 8px 19px 44px 14px rgb(0, 0, 0);
+        bottom:20%;
+        left: 10%;
+        
+      }
+      &[class$="2"] {
+        @include imagen(200px,200px,10px,absolute);
+        box-shadow: 8px 19px 44px 14px rgb(0, 0, 0);
+        right:20%;
+        bottom: 45%;
+      }
+      &[class$="3"] {
+        @include imagen(200px,200px,10px,absolute);
+        box-shadow: 8px 19px 44px 14px rgb(0, 0, 0);
+         right:20%;
+        bottom: 8%;
+      }
+    }
+
+  }
+}
+
+
+

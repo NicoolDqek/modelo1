@@ -1,2 +1,93 @@
 @import "../scss/mixins";
 
+.t2{
+    font-family: $bebas-neue-regular;
+    text-align: center;
+    @include fuente(35px,bold,$rich_black,5px);   
+    padding-top: 3rem; 
+}
+.contenedorV{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5rem;
+    font-family: $bebas-neue-regular;
+
+    .rigth{
+    padding: 1.5rem;
+    width: 50%;
+    height: auto;
+    
+
+    img{
+    @include imagen(auto,100%,50px,relative,);
+    }
+    }
+
+    h3{
+        @include fuente(17px,bold,$rich_black,2px);
+        padding-left: 5px;
+
+        }
+    h5{
+        @include fuente(12px,bold,$rose_ebony,1px);
+        line-height: 1.5;
+        padding-left: 5px;
+        
+        }
+        h6{
+        @include fuente(10px,bold,rgb(66, 65, 65),1px);
+        line-height: 1.5;
+        padding-left: 5px;
+        }
+        p{
+        @include fuente(13px,line-height,$raisin_black,1px);
+        line-height: 1.5;
+        padding-left: 5px;
+        
+        }
+
+    .left{
+        width: 50%;
+        height:auto;
+       
+       
+        
+    .articulo{
+            padding:10px;
+        
+        section{
+            display: flex;
+            align-items: center;
+        
+        
+        img{
+            @include imagen(auto,180px,20px,relative,);
+            }  
+            div{
+                padding:  4px;
+                line-height: 1.5;
+
+                h3{
+                    @include fuente(17px,bold,$rich_black,2px);
+            
+                    }
+                h5{
+                    @include fuente(12px,bold,$rose_ebony,1px);
+                    
+                    
+                    }
+                    h6{
+                    @include fuente(10px,bold,rgb(66, 65, 65),1px);
+                   
+                    }
+                    p{
+                    @include fuente(12px,line-height,$raisin_black,1px);
+
+                    }
+            }  
+
+        }
+    }
+        
+    }
+}

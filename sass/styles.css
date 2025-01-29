@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .navbar {
   display: flex;
   flex-direction: column;
@@ -315,14 +316,14 @@
      object-fit: cover;
 }
 .contenedorV h3 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #161c27;
   padding-left: 5px;
 }
 .contenedorV h5 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #583837;
@@ -351,12 +352,10 @@
 }
 .contenedorV .left .articulo {
   padding: 10px;
-}
-.contenedorV .left .articulo section {
   display: flex;
   align-items: center;
 }
-.contenedorV .left .articulo section img {
+.contenedorV .left .articulo img {
   height: auto;
   width: 180px;
   border-radius: 20px;
@@ -364,36 +363,137 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.contenedorV .left .articulo section div {
+.contenedorV .left .divC {
   padding: 4px;
   line-height: 1.5;
 }
-.contenedorV .left .articulo section div h3 {
-  font-size: 17px;
+.contenedorV .left .divC h3 {
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #161c27;
 }
-.contenedorV .left .articulo section div h5 {
-  font-size: 12px;
+.contenedorV .left .divC h5 {
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #583837;
 }
-.contenedorV .left .articulo section div h6 {
+.contenedorV .left .divC h6 {
   font-size: 10px;
   font-weight: bold;
   letter-spacing: 1px;
   color: rgb(66, 65, 65);
 }
-.contenedorV .left .articulo section div p {
+.contenedorV .left .divC p {
   font-size: 12px;
   font-weight: line-height;
   letter-spacing: 1px;
   color: rgba(55, 42, 47, 0.7450980392);
 }
 
+.contenedorOp {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+.contenedorOp .left {
+  width: 40%;
+  padding: 2rem 0 6rem 0;
+}
+.contenedorOp .left span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.contenedorOp .left span img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-right: 10px;
+}
+.contenedorOp .left i {
+  color: rgb(230, 147, 14);
+  font-size: 10px;
+  line-height: 1;
+}
+.contenedorOp .left h4 {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+  line-height: 2;
+}
+.contenedorOp .left p {
+  font-size: 13px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  color: black;
+  line-height: 1.5;
+}
+.contenedorOp .right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorOp .right .l {
+  display: flex;
+  width: -moz-min-content;
+  width: min-content;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+}
+.contenedorOp .right .l img {
+  width: 250px;
+  height: 300px;
+  border-radius: 50px;
+}
+.contenedorOp .right .r {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+  position: relative;
+}
+.contenedorOp .right .r video {
+  width: 100%;
+  border-radius: 40px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 8px 0;
+}
+.contenedorOp .right .r h4 {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: black;
+  padding-left: 5px;
+  text-align: center;
+}
+.contenedorOp .right .r button {
+  position: absolute;
+  width: 40%;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid #583837;
+  letter-spacing: 2px;
+  transition: 0.4s ease-in-out;
+}
+.contenedorOp .right .r button:hover {
+  background-color: #583837;
+  color: wheat;
+}
+
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=styles.css.map */
